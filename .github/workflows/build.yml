@@ -21,10 +21,13 @@ name: Build
 on:
   workflow_dispatch:
     inputs:
+      serverUrl:
+        description: 'Server URL'     
+        required: true
       rid:
         description: 'Server Runtime Identifier'     
-        required: false
-        default: "linux-arm64"
+        required: true
+        default: "linux-x64"
 
 jobs:
 
